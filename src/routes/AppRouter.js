@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import VocAddPageContainer from "../pages/VocAddPage/VocAddPageContainer";
-import VocListPageContainer from "../pages/VocListPage/VocListPageContainer";
+import LoginPageContainer from "../pages/LoginPage/LoginPageContainer";
+import SignUpPageContainer from "../pages/SignUpPage/SignUpPageContainer";
 
 const AppRouter = () => {
     return (
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <VocListPageContainer/>
+                    <LoginPageContainer/>
                 </Route>
-                <Route exact path="/add">
-                    <VocAddPageContainer/>
+                <Route exact path="/signUp">
+                    <SignUpPageContainer/>
                 </Route>
             </Switch>
         </Router>

@@ -1,0 +1,158 @@
+// color system
+// system-colors
+
+//gray-color
+$gray-50:       #F2F2F2;
+$gray-100:      #E6E6E6;
+$gray-200:      #CCCCCC;
+$gray-300:      #B3B3B3;
+$gray-400:      #999999;
+$gray-500:      #808080;
+$gray-600:      #555555;
+$gray-700:      #3D3D3D;
+$gray-800:      #242424;
+$gray-900:      #1A1A1A;
+
+
+//blue-color
+$blue-50:       #E6E9F5;
+$blue-100:      #BFC8E6;
+$blue-200:      #95A4D6;
+$blue-300:      #6B81C5;
+$blue-400:      #4866BA;
+$blue-500:      #1B4CAE;
+$blue-600:      #1344A5;
+$blue-700:      #003B99;
+$blue-800:      #00318D;
+$blue-900:      #002079;
+
+
+//background-color
+$bg-color:      #F5F7F8;
+
+
+
+
+//primary-color
+$color-primary: $blue-700;
+
+
+
+
+
+//font-system
+$font-size-base:              1rem;
+// Assumes the browser default, typically `16px`
+
+//font-size
+$fs-d1:     $font-size-base * 3;
+$fs-d2:     $font-size-base * 2.4;
+$fs-h1:     $font-size-base * 2;
+$fs-h2:     $font-size-base * 1.8;
+$fs-h3:     $font-size-base * 1.6;
+$fs-p1:     $font-size-base * 1.5;
+$fs-p2:     $font-size-base * 1.4;
+$fs-p3:     $font-size-base * 1.3;
+$fs-c1:     $font-size-base * 1.2;
+$fs-c2:     $font-size-base * 1.1;
+
+
+// card title default
+.card-title {
+    margin: 20px 0 4px 0;
+    font-size: $fs-h2;
+    color: $gray-800;
+}
+
+// card-box default
+.card-box {
+    border-radius: 3px;
+    border: 1px solid $gray-100;
+    background-color: #fff;
+    padding: 16px 30px;
+    margin-bottom: 40px;
+}
+
+// card-text default
+.card-text {
+    color: $gray-700;
+    font-size: $fs-p2;
+}
+
+
+
+
+//form
+
+.form-select {
+    height: 28px;
+    margin-right: 6px;
+    height: 28px;
+    color: $gray-700;
+}
+
+.form-text {
+    height: 28px;
+    margin-right: 6px;
+    height: 28px;
+    color: $gray-700;
+}
+
+.form-text-lg {
+    height: 40px;
+    
+}
+
+// btn style : default height 30px
+// btn default 
+
+.btn {
+    height: 30px;
+    margin: 30px auto;
+}
+
+//button-size
+.btn-sm {
+    font-size: $fs-p3;
+    height: 28px;
+}
+
+.btn-lg {
+    font-size: $fs-p1;
+    font-weight: bold;
+    height: 56px;
+    padding: 18px auto;
+}
+
+
+.btn-submit-blue {
+    border: 1px solid $blue-500;
+    color: #fff;
+    background-color: $blue-400;
+}
+
+.btn-submit-gray {
+    border: 1px solid $gray-100;
+    color: $gray-700;
+    background-color: $gray-50;
+}
+
+.btn-outline-gray {
+    background-color: #fff;
+    color: $gray-700;
+    border: 1px solid $gray-500;
+}
+
+
+.btn-outline-blue {
+    background-color: #fff;
+    color: $color-primary;
+    border: 1px solid $blue-800;
+}
+
+
+.btn-blue-primary {
+    border: 1px solid $blue-800;
+    color: #fff;
+    background-color: $color-primary;
+}

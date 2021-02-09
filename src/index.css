@@ -1,13 +1,282 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card-title {
+  margin: 20px 0 4px 0;
+  font-size: 1.8rem;
+  color: #242424;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-box {
+  border-radius: 3px;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  padding: 16px 30px;
+  margin-bottom: 40px;
 }
+
+.card-text {
+  color: #3D3D3D;
+  font-size: 1.4rem;
+}
+
+.form-select {
+  height: 28px;
+  margin-right: 6px;
+  height: 28px;
+  color: #3D3D3D;
+}
+
+.form-text {
+  height: 28px;
+  margin-right: 6px;
+  height: 28px;
+  color: #3D3D3D;
+}
+
+.form-text-lg {
+  height: 40px;
+}
+
+.btn {
+  height: 30px;
+  margin: 30px auto;
+}
+
+.btn-sm {
+  font-size: 1.3rem;
+  height: 28px;
+}
+
+.btn-lg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 56px;
+  padding: 18px auto;
+}
+
+.btn-submit-blue {
+  border: 1px solid #1B4CAE;
+  color: #fff;
+  background-color: #4866BA;
+}
+
+.btn-submit-gray {
+  border: 1px solid #E6E6E6;
+  color: #3D3D3D;
+  background-color: #F2F2F2;
+}
+
+.btn-outline-gray {
+  background-color: #fff;
+  color: #3D3D3D;
+  border: 1px solid #808080;
+}
+
+.btn-outline-blue {
+  background-color: #fff;
+  color: #003B99;
+  border: 1px solid #00318D;
+}
+
+.btn-blue-primary {
+  border: 1px solid #00318D;
+  color: #fff;
+  background-color: #003B99;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  background-color: #002079;
+  height: 60px;
+}
+
+header h1.logo {
+  padding: 20px 0 0 24px;
+  height: 40px;
+  width: 97px;
+}
+
+nav {
+  position: fixed;
+  background-color: #fff;
+  border-right: 1px solid #E6E6E6;
+  flex-shrink: 0;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 60px 0 0;
+  z-index: 997;
+}
+
+#left-menu > li.menu-depth1::before {
+  top: 25px;
+  right: 20px;
+  width: 7px;
+  height: 1px;
+}
+
+#left-menu > li > a {
+  display: block;
+  padding: 14px 44px 14px 64px;
+  font-size: 1.4rem;
+  color: #242424;
+}
+
+body {
+  background-color: #F5F7F8;
+  min-width: 1580px;
+  max-width: 1920px;
+  height: 100%;
+  letter-spacing: -0.03rem;
+}
+
+input, select {
+  height: 28px;
+  color: #3D3D3D;
+  border-radius: 3px;
+  border: 1px solid #E6E6E6;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 0 16px;
+}
+
+input::placeholder {
+  color: #CCCCCC;
+}
+
+select {
+  min-width: 108px;
+  padding: 0 5px;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0 16px;
+}
+
+#wrapper {
+  height: 100%;
+  padding: 60px 0 0 220px;
+  box-sizing: border-box;
+}
+
+#content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  background-color: #F5F7F8;
+}
+
+@media (min-width: 1920px) {
+  #content {
+    width: 1620px;
+    margin: 0 auto;
+  }
+}
+
+article {
+  background-color: #F5F7F8;
+  min-width: 1260px;
+  max-width: 1620px;
+  padding: 0 40px;
+  flex-grow: 1;
+}
+
+.content-head {
+  padding: 40px 0 20px;
+}
+
+.content-head h1 {
+  color: #1A1A1A;
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+caption {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */

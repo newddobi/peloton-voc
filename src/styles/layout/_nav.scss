@@ -1,0 +1,31 @@
+// #content display: flex
+nav {
+    position: fixed;
+    background-color: #fff;
+    border-right: 1px solid $gray-100;
+    flex-shrink: 0;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 60px 0 0;
+    z-index: 997;
+
+}
+
+#left-menu > li.menu-depth1::before {
+    top: 25px;
+    right: 20px;
+    width: 7px;
+    height: 1px;
+}
+
+#left-menu > li > a {
+    display: block;
+    padding: 14px 44px 14px 64px;
+    font-size: $fs-p2;
+    color: $gray-800;
+}

@@ -1,0 +1,106 @@
+// basic styles
+
+body {
+    background-color: $bg-color;
+    min-width: 1580px;
+    max-width: 1920px;
+    height: 100%;
+    letter-spacing: -0.03rem;
+}
+
+
+input, select {
+    height: 28px;
+    color: $gray-700;
+    border-radius: 3px;
+    border: 1px solid $gray-100;
+    font-size: $fs-p3;
+    vertical-align: middle;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    padding: 0 16px;
+
+    &::placeholder {
+        color: $gray-200;
+    }
+}
+
+select {
+    min-width: 108px;
+    padding: 0 5px;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    border-radius: 3px;
+    font-size: $fs-p2;
+    cursor: pointer;
+    outline: none;
+    padding: 0 16px;
+}
+
+
+#wrapper {
+    height: 100%;
+    padding: 60px 0 0 220px;
+    box-sizing: border-box;
+}
+
+
+
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    background-color: $bg-color;
+
+
+    @media (min-width: 1920px) {
+        width: 1620px;
+        margin: 0 auto;
+    }
+
+}
+
+
+// article area 
+article {
+    background-color: $bg-color;
+    min-width: 1260px;
+    max-width: 1620px;
+    padding: 0 40px;
+    flex-grow: 1;
+}
+
+.content-head {
+    padding: 40px 0 20px; 
+}
+
+
+.content-head h1 {
+    color: $gray-900;
+    font-size: $fs-d1;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+caption {
+    display: none;
+}
+
+
+
+
+
+
