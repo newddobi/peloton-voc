@@ -1,18 +1,19 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
-const LoginForm = () => {
+const LoginForm = ({ userSignIn }) => {
     const brandId = useRef("");
     const id = useRef("");
     const password = useRef("");
 
     const logInSubmit = (e) => {
         e.preventDefault();
-        console.log(
-            brandId.current.value,
-            id.current.value,
-            password.current.value
-        );
+        console.log("logInSubmit", brandId.current.value);
+        userSignIn({
+            brandId: brandId.current.value,
+            id: id.current.value,
+            password: password.current.value,
+        });
     };
 
     return (

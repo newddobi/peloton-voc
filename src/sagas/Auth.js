@@ -21,6 +21,7 @@ function* createUserWithEmailPassword({ payload }) {
 }
 
 function* signInUserProcess({ payload }) {
+    console.log("signInUser process 1", payload);
     const { email, password } = payload;
     try {
         const signInUser = yield call(signInUserRequest, email, password);
