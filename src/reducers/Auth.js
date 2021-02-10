@@ -1,4 +1,5 @@
 import {
+    SIGNIN_USER,
     SIGNIN_USER_SUCCESS,
     SIGNOUT_USER_SUCCESS,
     SIGNUP_USER_SUCCESS,
@@ -8,10 +9,17 @@ const INIT_STATE = {
     signInFlag: false,
     signOutFlag: false,
     signUpFlag: false,
+    signInSuccessFlag: false,
 };
 
-export default (state = INIT_STATE, action) => {
+export default function(state = INIT_STATE, action) {
     switch (action.type) {
+        case SIGNIN_USER: {
+            return {
+                ...state,
+                signInSuccessFlag: true,
+            };
+        }
         case SIGNUP_USER_SUCCESS: {
             return {
                 ...state,

@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import LoginForm from "./components/LoginForm";
 import { userSignIn } from "actions/index.js";
 
-const LoginPageContainer = () => {
+const LoginPageContainer = ({ userSignIn }) => {
     return (
         <div>
             <LoginForm userSignIn={userSignIn} />
@@ -11,6 +11,4 @@ const LoginPageContainer = () => {
     );
 };
 
-const mapDispatchToProps = { userSignIn };
-
-export default connect(null, mapDispatchToProps)(LoginPageContainer);
+export default connect(null, { userSignIn })(LoginPageContainer);

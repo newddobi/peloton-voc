@@ -4,44 +4,41 @@ import {
     SIGNOUT_USER,
     SIGNOUT_USER_SUCCESS,
     SIGNUP_USER,
-    SIGNUP_USER_SUCCESS
-  } from 'constants/ActionTypes.js';
+    SIGNUP_USER_SUCCESS,
+} from "constants/ActionTypes.js";
 
-
-
-  export const userSignUp = (user) => {
+export const userSignUp = (user) => {
     return {
-      type: SIGNUP_USER,
-      payload: user
+        type: SIGNUP_USER,
+        payload: user,
     };
-  };
-  export const userSignIn = (user) => {
+};
+export const userSignIn = (user) => {
+    console.log("userSignIn action", user);
     return {
-      type: SIGNIN_USER,
-      payload: user
+        type: SIGNIN_USER,
+        payload: user,
     };
-  };
-  export const userSignOut = () => {
+};
+export const userSignOut = () => {
     return {
-      type: SIGNOUT_USER
+        type: SIGNOUT_USER,
     };
-  };
-  export const userSignUpSuccess = (authUser) => {
+};
+export const userSignUpSuccess = (authUser) => {
     return {
-      type: SIGNUP_USER_SUCCESS,
-      payload: authUser
+        type: SIGNUP_USER_SUCCESS,
+        payload: authUser,
     };
-  };
-  
-  export const userSignInSuccess = (authUser) => {
+};
+export const userSignInSuccess = (authUser) => {
     return {
-      type: SIGNIN_USER_SUCCESS,
-      payload: authUser
-    }
-  };
-  export const userSignOutSuccess = () => {
+        type: SIGNIN_USER_SUCCESS,
+        payload: authUser,
+    };
+};
+export const userSignOutSuccess = () => {
     return {
-      type: SIGNOUT_USER_SUCCESS,
-    }
-  };
-  
+        type: SIGNOUT_USER_SUCCESS,
+    };
+};
